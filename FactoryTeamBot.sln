@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryTeamBot", "FactoryTeamBot.csproj", "{116273FB-73B6-430C-A04E-06CC10120C5F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryTeamBot", "FactoryTeamBot.csproj", "{AA40DBC1-5FBC-49F3-98F3-0C7F604FFE60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +8,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{116273FB-73B6-430C-A04E-06CC10120C5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{116273FB-73B6-430C-A04E-06CC10120C5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{116273FB-73B6-430C-A04E-06CC10120C5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{116273FB-73B6-430C-A04E-06CC10120C5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA40DBC1-5FBC-49F3-98F3-0C7F604FFE60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA40DBC1-5FBC-49F3-98F3-0C7F604FFE60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA40DBC1-5FBC-49F3-98F3-0C7F604FFE60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA40DBC1-5FBC-49F3-98F3-0C7F604FFE60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,4 +1,0 @@
-﻿[**/Dtos/*.cs]
-# CS8618: Non-nullable field is uninitialized. Consider declaring as nullable.
-resharper_c_sharp_warnings_cs8618_highlighting = none
-resharper_unused_auto_property_accessor_global_highlighting=none

@@ -9,16 +9,21 @@ namespace FactoryTeamBot.Controllers;
 [Route("[controller]")]
 public class InteractionController : ControllerBase
 {
-    private readonly IInteractionService _interactionService;
-    
-    public InteractionController(IInteractionService interactionService)
+    private readonly IInteractionService _interactionService;    
+    private readonly IVerificationService _verificationService;
+
+    public InteractionController(IInteractionService interactionService, IVerificationService verificationService)
     {
         _interactionService = interactionService;
+        _verificationService = verificationService;
     }
     
     [HttpPost]
-    public InteractionCallbackDto<InteractionCallbackDataDto>? Post([FromBody] InteractionDto interaction)
+    public async Task<ActionResult<InteractionCallbackDto<InteractionCallbackDataDto>?>> Post([FromBody] InteractionDto interaction)
     {
+        if (!await _verificationService.VerifyInteraction(Request))
+            return Unauthorized();
+
         return _interactionService.HandleInteraction(interaction);
     }
     
