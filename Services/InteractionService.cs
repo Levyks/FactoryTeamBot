@@ -10,10 +10,25 @@ public class InteractionService: IInteractionService
     {
         if (interaction.Type == InteractionType.Ping)
             return HandlePing(interaction);
-        
-        ;
 
-        return null;
+        return interaction.Data?.Name switch
+        {
+            "daily" => HandleDaily(),
+            _ => null
+        };
+    }
+    
+    private InteractionCallbackDto<InteractionCallbackDataDto> HandleDaily()
+    {
+        
+        return new InteractionCallbackDto<InteractionCallbackDataDto>
+        {
+            Type = InteractionCallbackType.ChannelMessageWithSource,
+            Data = new InteractionCallbackMessageDataDto
+            {
+                Content = "Daily"
+            }
+        };
     }
     
     private InteractionCallbackDto<InteractionCallbackDataDto> HandlePing(InteractionDto interaction)
