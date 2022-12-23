@@ -19,6 +19,7 @@ builder.Services.AddControllers().AddNewtonsoftJson(options =>
     };
 });
 
+builder.Services.AddScoped<IEaSimulatorService, EaSimulatorService>();
 builder.Services.AddScoped<IInteractionService, InteractionService>();
 builder.Services.AddScoped<IVerificationService, VerificationService>();
 
