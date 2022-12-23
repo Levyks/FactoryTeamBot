@@ -1,3 +1,5 @@
 ﻿.idea/
 bin/
 obj/
+.replit
+replit.nix
