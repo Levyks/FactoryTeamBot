@@ -51,7 +51,7 @@ public class InteractionService: IInteractionService
             Type = InteractionCallbackType.ChannelMessageWithSource,
             Data = new InteractionCallbackMessageDataDto
             {
-                Content = "Daily"
+                Content = "https://media.tenor.com/6ieP8RbFQ_EAAAAC/daily-daily-command.gif"
             }
         };
     }
