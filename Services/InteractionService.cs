@@ -10,6 +10,8 @@ public class InteractionService: IInteractionService
     {
         if (interaction.Type == InteractionType.Ping)
             return HandlePing(interaction);
+        
+        ;
 
         return null;
     }

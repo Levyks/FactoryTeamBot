@@ -8,6 +8,7 @@ public class InteractionDto
     public string Id { get; set; }
     public string Token { get; set; } = null!;
     public UserDto? User { get; set; } = null!;
+    public ApplicationCommandDataDto? Data { get; set; } = null!;
     public InteractionType Type { get; set; }
     public int Version { get; set; }
 }
